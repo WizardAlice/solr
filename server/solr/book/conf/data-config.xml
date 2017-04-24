@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+    <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf8&amp;useSSL=false" user="root" password="wanner1597" batchSize="-1" />
+　　<document name="testDocwangtong">
+        <entity name="book" pk="id"
+          query="select * from book"
+          deltaImportQuery="select * from book where id='${dih.delta.id}'"
+          deltaQuery="select id from book where updateTime > '${dataimporter.last_index_time}'"
+          deletedPkQuery="select id from book where isDeleted=1"
+          >
+　　        <field column="id" name="id"/>
+        	<field column="bookName" name="bookName"/>
+            <field column="author" name="author"/>
+            <field column="publish" name="publish"/>
+            <field column="publishDate" name="publishDate"/>
+            <field column="abstract" name="abstract"/>
+            <field column="keyword" name="keyword"/>
+            <field column="bookState" name="bookState"/>
+            <field column="registeDate" name="registeDate"/>
+            <field column="img" name="img"/>
+            <field column="updateTime" name="updateTime"/>
+　　　  </entity>
+
+　　</document>
+</dataConfig>

@@ -1,0 +1,68 @@
+2017-04-24 07:44:12.749 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-04-24 07:44:13.090 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr? version 6.5.0
+2017-04-24 07:44:13.090 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-04-24 07:44:13.090 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\solr-6.5.0
+2017-04-24 07:44:13.101 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-04-24T07:44:13.091Z
+2017-04-24 07:44:13.101 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-04-24 07:44:13.113 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: D:\solr-6.5.0\server\solr
+2017-04-24 07:44:13.119 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\solr-6.5.0\server\solr\solr.xml
+2017-04-24 07:44:13.412 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-04-24 07:44:13.514 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\solr-6.5.0\server\solr
+2017-04-24 07:44:13.515 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [book]
+2017-04-24 07:44:13.566 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrResourceLoader [book] Added 54 libs to classloader, from paths: [/D:/solr-6.5.0/contrib/clustering/lib, /D:/solr-6.5.0/contrib/extraction/lib, /D:/solr-6.5.0/contrib/langid/lib, /D:/solr-6.5.0/contrib/velocity/lib, /D:/solr-6.5.0/dist]
+2017-04-24 07:44:13.598 INFO  (main) [   ] o.e.j.s.Server Started @1369ms
+2017-04-24 07:44:13.678 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.5.0
+2017-04-24 07:44:13.779 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.s.IndexSchema [book] Schema name=example-data-driven-schema
+2017-04-24 07:44:13.964 WARN  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.SynonymFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-04-24 07:44:13.969 WARN  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.WordDelimiterFilterFactory]. Please consult documentation how to replace it accordingly.
+2017-04-24 07:44:14.081 INFO  (qtp581374081-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=214
+2017-04-24 07:44:14.194 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.s.IndexSchema Loaded schema example-data-driven-schema/1.6 with uniqueid field id
+2017-04-24 07:44:14.226 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.CoreContainer Creating SolrCore 'book' using configuration from instancedir D:\solr-6.5.0\server\solr\book
+2017-04-24 07:44:14.240 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-04-24 07:44:14.244 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.SolrCore [[book] ] Opening new SolrCore at [D:\solr-6.5.0\server\solr\book], dataDir=[D:\solr-6.5.0\server\solr\book\data\]
+2017-04-24 07:44:14.248 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.c.JmxMonitoredMap JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@6e9175d8
+2017-04-24 07:44:14.291 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2017-04-24 07:44:14.539 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2017-04-24 07:44:14.539 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2017-04-24 07:44:14.555 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2017-04-24 07:44:14.556 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-04-24 07:44:14.594 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.s.SolrIndexSearcher Opening [Searcher@1a653253[book] main]
+2017-04-24 07:44:14.601 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\solr-6.5.0\server\solr\book\conf
+2017-04-24 07:44:14.612 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2017-04-24 07:44:14.618 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2017-04-24 07:44:14.620 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\solr-6.5.0\server\solr\book\conf\elevate.xml
+2017-04-24 07:44:14.631 INFO  (coreLoadExecutor-6-thread-1) [   x:book] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-04-24 07:44:14.670 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1a653253[book] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-04-24 07:44:14.670 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-24 07:44:14.670 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2017-04-24 07:44:14.672 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.SolrCore [book] Registered new searcher Searcher@1a653253[book] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-04-24 07:44:16.060 INFO  (qtp581374081-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1493019855938} status=0 QTime=0
+2017-04-24 07:44:16.062 INFO  (qtp581374081-22) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1493019856045} status=0 QTime=2
+2017-04-24 07:44:16.069 INFO  (qtp581374081-13) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1493019856046} status=0 QTime=2
+2017-04-24 07:44:16.072 INFO  (qtp581374081-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1493019855939} status=0 QTime=12
+2017-04-24 07:44:16.090 INFO  (qtp581374081-16) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1493019856046} status=0 QTime=0
+2017-04-24 07:44:16.933 INFO  (qtp581374081-20) [   x:book] o.a.s.h.d.DataImporter Loading DIH Configuration: data-config.xml
+2017-04-24 07:44:16.938 INFO  (qtp581374081-20) [   x:book] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2017-04-24 07:44:16.943 INFO  (qtp581374081-20) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/dataimport params={core=book&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1493019856046&verbose=false} status=0 QTime=11
+2017-04-24 07:44:16.943 INFO  (Thread-14) [   x:book] o.a.s.h.d.DataImporter Starting Full Import
+2017-04-24 07:44:16.947 INFO  (qtp581374081-19) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1493019856046} status=0 QTime=0
+2017-04-24 07:44:16.957 INFO  (Thread-14) [   x:book] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-04-24 07:44:17.019 INFO  (Thread-14) [   x:book] o.a.s.h.d.JdbcDataSource Creating a connection for entity book with URL: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf8&useSSL=false
+2017-04-24 07:44:17.201 INFO  (Thread-14) [   x:book] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 182
+2017-04-24 07:44:17.249 INFO  (Thread-14) [   x:book] o.a.s.h.d.DocBuilder Import completed successfully
+2017-04-24 07:44:17.250 INFO  (Thread-14) [   x:book] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-04-24 07:44:17.250 INFO  (Thread-14) [   x:book] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@116b2dee
+2017-04-24 07:44:18.101 INFO  (Thread-14) [   x:book] o.a.s.s.SolrIndexSearcher Opening [Searcher@2afe0d4a[book] main]
+2017-04-24 07:44:18.104 INFO  (Thread-14) [   x:book] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-04-24 07:44:18.104 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2afe0d4a[book] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3l(6.5.0):C8)))}
+2017-04-24 07:44:18.104 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2017-04-24 07:44:18.106 INFO  (searcherExecutor-7-thread-1-processing-x:book) [   x:book] o.a.s.c.SolrCore [book] Registered new searcher Searcher@2afe0d4a[book] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3l(6.5.0):C8)))}
+2017-04-24 07:44:18.107 INFO  (Thread-14) [   x:book] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2017-04-24 07:44:18.108 INFO  (Thread-14) [   x:book] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2017-04-24 07:44:18.113 INFO  (Thread-14) [   x:book] o.a.s.h.d.DocBuilder Time taken = 0:0:1.155
+2017-04-24 07:44:18.113 INFO  (Thread-14) [   x:book] o.a.s.u.p.LogUpdateProcessorFactory [book]  webapp=/solr path=/dataimport params={core=book&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1493019856046&verbose=false} status=0 QTime=11{deleteByQuery=*:* (-1565544789547417600),add=[D58016 (1565544789790687232), I217.02216 (1565544789824241664), I247.51473 (1565544789826338816), I247.55621 (1565544789827387392), I712.451947 (1565544789829484544), I712.65331 (1565544789830533120), K248.09007 (1565544789832630272), O6007 (1565544789833678848)],commit=} 0 1181
+2017-04-24 07:44:19.242 INFO  (qtp581374081-14) [   x:book] o.a.s.c.S.Request [book]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1493019856046} status=0 QTime=0
+2017-04-24 07:45:08.336 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1327536153
+2017-04-24 07:45:08.337 INFO  (coreCloseExecutor-12-thread-1) [   x:book] o.a.s.c.SolrCore [book]  CLOSING SolrCore org.apache.solr.core.SolrCore@7dc64a18
+2017-04-24 07:45:08.349 INFO  (coreCloseExecutor-12-thread-1) [   x:book] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.book
+2017-04-24 07:45:08.350 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
