@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataConfig>
+    <dataSource type="JdbcDataSource" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf8&amp;useSSL=false" user="root" password="wanner1597" batchSize="-1" />
+　　<document name="userDocwangtong">
+        <entity name="user" pk="id"
+            query="select * from user"
+          	deltaImportQuery="select * from user where id='${dih.delta.id}'"
+          	deltaQuery="select id from user where updateTime > '${dataimporter.last_index_time}'"
+          	deletedPkQuery="select id from user where isDeleted=1">
+　　　      <field column="id" name="id"/>
+　　　      <field column="name" name="name"/>
+            <field column="gender" name="gender"/>
+            <field column="department" name="department"/>
+            <field column="address" name="address"/>
+            <field column="phone" name="phone"/>
+            <field column="birthdate" name="birthdate"/>
+            <field column="img" name="img"/>
+            <field column="updateTime" name="updateTime"/>
+　　　  </entity>
+　　</document>
+</dataConfig>
